@@ -1,6 +1,10 @@
 import { personalInfo } from "@/lib/data";
-import { Mail, Github, MapPin } from "lucide-react";
-import { IconBrandMastodon } from "@tabler/icons-react";
+import {
+  IconMapPin,
+  IconMail,
+  IconBrandGithub,
+  IconBrandMastodon,
+} from "@tabler/icons-react";
 import { motion } from "framer-motion";
 import MotionWrapper from "./MotionWrapper";
 
@@ -61,7 +65,7 @@ export default function HeroSection() {
                 variants={childVariants}
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
-                <MapPin className="h-4 w-4 mr-2" />
+                <IconMapPin />
                 📍 {personalInfo.location}
               </motion.div>
 
@@ -71,7 +75,7 @@ export default function HeroSection() {
                 variants={childVariants}
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
-                <Mail className="h-4 w-4 mr-2" />
+                <IconMail />
                 ✉️ {personalInfo.email}
               </motion.a>
 
@@ -83,7 +87,7 @@ export default function HeroSection() {
                 variants={childVariants}
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
-                <Github className="h-4 w-4 mr-2" />
+                <IconBrandGithub />
                 🌟 GitHub
               </motion.a>
 
