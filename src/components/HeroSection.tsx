@@ -95,7 +95,7 @@ export default function HeroSection() {
                 variants={childVariants}
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
-                <IconBrandMastodon size={4} />
+                <IconBrandMastodon />
                 🔗 Mastodon
               </motion.a>
             </motion.div>
