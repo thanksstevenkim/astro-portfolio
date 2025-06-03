@@ -94,7 +94,7 @@ export default function HeroSection() {
               <motion.a
                 href={personalInfo.mastodon}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel="noopener noreferrer me"
                 className="flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors"
                 variants={childVariants}
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
