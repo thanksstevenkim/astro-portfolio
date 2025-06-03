@@ -3,7 +3,7 @@ export const personalInfo = {
   location: "Daejeon, South Korea",
   email: "stevenkim0325@gmail.com",
   github: "https://github.com/thanksstevenkim",
-  mastodon: "https://mustard.blog/thanksstevenkim",
+  mastodon: "https://mustard.blog/@thanksstevenkim",
 };
 
 export const education = [

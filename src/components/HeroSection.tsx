@@ -1,7 +1,6 @@
 import { personalInfo } from "@/lib/data";
 import { Mail, Github, MapPin } from "lucide-react";
-import { SocialIcon } from "react-social-icons";
-import "react-social-icons/mastodon";
+import { IconBrandMastodon } from "@tabler/icons-react";
 import { motion } from "framer-motion";
 import MotionWrapper from "./MotionWrapper";
 
@@ -96,7 +95,7 @@ export default function HeroSection() {
                 variants={childVariants}
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
-                <SocialIcon />
+                <IconBrandMastodon size={4} />
                 🔗 Mastodon
               </motion.a>
             </motion.div>
