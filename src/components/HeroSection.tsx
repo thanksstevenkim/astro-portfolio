@@ -87,7 +87,7 @@ export default function HeroSection() {
               </motion.a>
 
               <motion.a
-                href={personalInfo.linkedin}
+                href={personalInfo.mastodon}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center text-sm text-muted-foreground hover:text-foreground transition-colors"
@@ -95,7 +95,7 @@ export default function HeroSection() {
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
                 <Linkedin className="h-4 w-4 mr-2" />
-                🔗 LinkedIn
+                🔗 Mastodon
               </motion.a>
             </motion.div>
           </div>
