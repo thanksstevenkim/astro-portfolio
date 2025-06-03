@@ -100,7 +100,10 @@ export default function HeroSection() {
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
                 <IconBrandMastodon />
-                🔗 Mastodon
+                🔗{" "}
+                <a rel="me" href="https://mustard.blog/@thanksstevenkim">
+                  Mastodon
+                </a>
               </motion.a>
             </motion.div>
           </div>
