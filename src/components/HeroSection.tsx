@@ -71,14 +71,13 @@ export default function HeroSection({ personalInfo }: Props) {
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
                 <IconMapPin />
-                📍 {personalInfo.location}
+                {personalInfo.location}
               </motion.div>
 
               {personalInfo.languages?.length && (
                 <motion.div className="mt-6">
-                  <h3 className="text-md font-semibold mb-2">
-                    <IconWorld /> 🌐 Languages
-                  </h3>
+                  <IconWorld />
+                  Languages
                   <ul className="text-sm text-muted-foreground space-y-1">
                     {personalInfo.languages.map((lang, idx) => (
                       <li key={idx}>
@@ -96,7 +95,7 @@ export default function HeroSection({ personalInfo }: Props) {
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
                 <IconMail />
-                ✉️ {personalInfo.email}
+                {personalInfo.email}
               </motion.a>
 
               <motion.a
@@ -108,7 +107,7 @@ export default function HeroSection({ personalInfo }: Props) {
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
                 <IconBrandGithub />
-                🌟 GitHub
+                GitHub
               </motion.a>
 
               <motion.a
@@ -119,8 +118,7 @@ export default function HeroSection({ personalInfo }: Props) {
                 variants={childVariants}
                 whileHover={{ scale: 1.05, color: "#4b5563" }}
               >
-                <IconBrandMastodon />
-                🔗{" "}
+                <IconBrandMastodon />{" "}
                 <a rel="me" href="https://mustard.blog/@thanksstevenkim">
                   Mastodon
                 </a>
