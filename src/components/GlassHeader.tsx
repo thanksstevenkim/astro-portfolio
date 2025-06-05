@@ -45,7 +45,7 @@ export default function GlassHeader() {
           <a href="/" className="hover:text-foreground">
             한국어
           </a>
-          <a href="/ja/" className="hover:text-foreground">
+          <a href="/jp/" className="hover:text-foreground">
             日本語
           </a>
           <a href="/en/" className="hover:text-foreground">
@@ -100,7 +100,7 @@ export default function GlassHeader() {
               <a href="/" className="hover:text-foreground">
                 🇰🇷
               </a>
-              <a href="/ja/" className="hover:text-foreground">
+              <a href="/jp/" className="hover:text-foreground">
                 🇯🇵
               </a>
               <a href="/en/" className="hover:text-foreground">
