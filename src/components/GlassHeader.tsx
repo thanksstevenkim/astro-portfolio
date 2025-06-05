@@ -41,6 +41,18 @@ export default function GlassHeader() {
           ))}
         </nav>
 
+        <div className="hidden md:flex space-x-2 text-sm font-medium text-foreground/60">
+          <a href="/" className="hover:text-foreground">
+            한국어
+          </a>
+          <a href="/ja/" className="hover:text-foreground">
+            日本語
+          </a>
+          <a href="/en/" className="hover:text-foreground">
+            English
+          </a>
+        </div>
+
         <div className="flex items-center space-x-2">
           <ThemeToggle />
 
@@ -84,6 +96,17 @@ export default function GlassHeader() {
                 </motion.a>
               ))}
             </nav>
+            <div className="flex space-x-4 justify-center mt-4 text-sm font-medium text-foreground/60">
+              <a href="/" className="hover:text-foreground">
+                🇰🇷
+              </a>
+              <a href="/ja/" className="hover:text-foreground">
+                🇯🇵
+              </a>
+              <a href="/en/" className="hover:text-foreground">
+                🇺🇸
+              </a>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

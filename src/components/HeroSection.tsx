@@ -1,4 +1,4 @@
-import { personalInfo } from "@/lib/data";
+import { PersonalInfo } from "@/lib/types";
 import {
   IconMapPin,
   IconMail,
@@ -8,7 +8,11 @@ import {
 import { motion } from "framer-motion";
 import MotionWrapper from "./MotionWrapper";
 
-export default function HeroSection() {
+type Props = {
+  personalInfo: PersonalInfo;
+};
+
+export default function HeroSection({ personalInfo }: Props) {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {

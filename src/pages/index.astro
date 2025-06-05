@@ -2,22 +2,26 @@
 import Layout from "@/layouts/Layout.astro";
 import GlassHeader from "@/components/GlassHeader";
 import HeroSection from "@/components/HeroSection";
-// import ExperienceSection from "@/components/ExperienceSection";
 import SkillsSection from "@/components/SkillsSection";
 import ProjectsSection from "@/components/ProjectsSection";
-// import AwardsSection from "@/components/AwardsSection";
 import EducationSection from "@/components/EducationSection";
 import Footer from "@/components/Footer";
+
+import {
+  personalInfo,
+  skills,
+  projects,
+  education,
+} from "@/lib/data";
 ---
 
 <Layout>
   <GlassHeader client:only="react" />
   <main class="min-h-screen">
-    <HeroSection client:only="react" />
-    <SkillsSection client:only="react" />
-    <ProjectsSection client:only="react" />
-    <EducationSection client:only="react" />
+    <HeroSection client:only="react" personalInfo={personalInfo} />
+    <SkillsSection client:only="react" data={skills} />
+    <ProjectsSection client:only="react" data={projects} />
+    <EducationSection client:only="react" data={education} />
   </main>
   <Footer client:only="react" />
-  <a href="https://mustard.blog/@thanksstevenkim" rel="me">Follow me on Mastodon</a>
 </Layout>

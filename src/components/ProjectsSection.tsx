@@ -1,5 +1,4 @@
-import React from "react";
-import { projects } from "@/lib/data";
+import type { Projects } from "@/lib/types";
 import {
   CardContent,
   CardDescription,
@@ -12,7 +11,11 @@ import { GlassCard } from "./ui/glass-card";
 import MotionWrapper from "./MotionWrapper";
 import { motion } from "framer-motion";
 
-export default function ProjectsSection() {
+type Props = {
+  data: Projects;
+};
+
+export default function ProjectsSection({ data }: Props) {
   return (
     <section id="projects" className="py-12 relative">
       <div className="container max-w-4xl mx-auto px-6 md:px-4">
@@ -23,7 +26,7 @@ export default function ProjectsSection() {
         </MotionWrapper>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {projects.map((project, index) => (
+          {data.map((project, index) => (
             <MotionWrapper key={project.title} delay={index * 0.2}>
               <GlassCard className="group overflow-hidden dark:border-purple-500/10 h-full flex flex-col">
                 <CardHeader className="bg-gradient-to-r from-purple-500/5 to-pink-500/5">

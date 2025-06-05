@@ -1,10 +1,14 @@
-import { education } from "@/lib/data";
+import type { Education } from "@/lib/types";
 import TimelineItem from "./TimelineItem";
 import { Award } from "lucide-react";
 import MotionWrapper from "./MotionWrapper";
 import { motion } from "framer-motion";
 
-export default function EducationSection() {
+type Props = {
+  data: Education;
+};
+
+export default function EducationSection({ data }: Props) {
   return (
     <section
       id="education"
@@ -18,13 +22,13 @@ export default function EducationSection() {
         </MotionWrapper>
 
         <div className="mb-8">
-          {education.map((edu, index) => (
+          {data.map((edu, index) => (
             <TimelineItem
               key={edu.institution}
               title={`🎓 ${edu.degree}`}
               subtitle={`🏛️ ${edu.institution}`}
               date={`📅 ${edu.period}`}
-              isLast={index === education.length - 1}
+              isLast={index === data.length - 1}
               index={index}
             >
               <p className="text-sm text-muted-foreground mb-3">
