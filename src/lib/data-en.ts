@@ -3,10 +3,15 @@ import type { PersonalInfo, Education, Skills, Projects } from "./types";
 export const personalInfo: PersonalInfo = {
   name: 'Steven "thx" Kim',
   location: "Daejeon, South Korea",
-  language: "Korean, Japanese(JLPT N1), English",
+  languages: [
+    { name: "Korean", level: "Native" },
+    { name: "Japanese", level: "Fluent (JLPT N1)" },
+    { name: "English", level: "Intermediate (TOEIC 810)" },
+  ],
   email: "stevenkim0325@gmail.com",
   github: "https://github.com/thanksstevenkim",
   mastodon: "https://mustard.blog/@thanksstevenkim",
+  bio: 'A developer exploring technical independence through operating a Mastodon server, frontend development, and backend infrastructure. Known online as "thanksstevenkim." Proficient in Korean (native), Japanese (JLPT N1), and English (TOEIC 810), with strong communication and documentation skills in multilingual environments.',
 };
 
 export const education: Education = [

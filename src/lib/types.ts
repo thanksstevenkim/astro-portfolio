@@ -1,10 +1,16 @@
+export type Language = {
+  name: string;
+  level: string;
+};
+
 export type PersonalInfo = {
   name: string;
   location: string;
-  language: string;
+  languages?: Language[];
   email: string;
   github: string;
   mastodon: string;
+  bio: string;
 };
 
 export type EducationEntry = {

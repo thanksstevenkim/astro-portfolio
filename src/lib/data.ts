@@ -3,10 +3,15 @@ import type { PersonalInfo, Education, Skills, Projects } from "./types";
 export const personalInfo: PersonalInfo = {
   name: 'Steven "thx" Kim',
   location: "대한민국, 대전광역시",
-  language: "한국어, 일본어(JLPT N1), 영어(TOEIC 810)",
+  languages: [
+    { name: "한국어", level: "모국어" },
+    { name: "일본어", level: "유창 (JLPT N1)" },
+    { name: "영어", level: "중상급 (TOEIC 810)" },
+  ],
   email: "stevenkim0325@gmail.com",
   github: "https://github.com/thanksstevenkim",
   mastodon: "https://mustard.blog/@thanksstevenkim",
+  bio: "Mastodon 서버 운영부터 프론트엔드 개발, 서버 관리 경험을 기반으로 기술 독립성을 추구하며 살아가는 방법을 고민하는 개발자입니다. 한국어(모국어), 일본어(JLPT N1), 영어(TOEIC 810) 3개 국어 사용이 가능하며, 다국어 환경에서의 커뮤니케이션과 문서 작성에도 익숙합니다.",
 };
 
 export const education: Education = [

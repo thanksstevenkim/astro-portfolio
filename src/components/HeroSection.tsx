@@ -74,14 +74,20 @@ export default function HeroSection({ personalInfo }: Props) {
                 📍 {personalInfo.location}
               </motion.div>
 
-              <motion.div
-                className="flex items-center text-sm text-muted-foreground"
-                variants={childVariants}
-                whileHover={{ scale: 1.05, color: "#4b5563" }}
-              >
-                <IconWorld />
-                🗣️ {personalInfo.language}
-              </motion.div>
+              {personalInfo.languages?.length && (
+                <motion.div className="mt-6">
+                  <h3 className="text-md font-semibold mb-2">
+                    <IconWorld /> 🌐 Languages
+                  </h3>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    {personalInfo.languages.map((lang, idx) => (
+                      <li key={idx}>
+                        {lang.name} – {lang.level}
+                      </li>
+                    ))}
+                  </ul>
+                </motion.div>
+              )}
 
               <motion.a
                 href={`mailto:${personalInfo.email}`}
@@ -144,9 +150,7 @@ export default function HeroSection({ personalInfo }: Props) {
           <div className="bg-gradient-to-r from-purple-500/10 to-pink-500/10 backdrop-blur-sm backdrop-filter p-4 rounded-lg border border-purple-500/20 dark:border-purple-500/10 shadow-sm">
             <p className="text-muted-foreground pl-4 py-2 mb-4 relative">
               <span className="absolute left-0 top-0 h-full w-1 bg-gradient-to-b from-purple-500 to-pink-500 rounded-full"></span>
-              Mastodon 서버를 통해 첫 발을 들인 서버 운영부터 프론트엔드 개발,
-              서버 관리 경험을 바탕으로 기술 독립성을 추구하며 살아가는 방법을
-              고민하는 개발자, "thanksstevenkim"입니다.
+              {personalInfo.bio}
             </p>
           </div>
         </MotionWrapper>
