@@ -75,9 +75,12 @@ export default function HeroSection({ personalInfo }: Props) {
               </motion.div>
 
               {personalInfo.languages?.length && (
-                <motion.div className="mt-6">
+                <motion.div
+                  className="flex items-center text-sm text-muted-foreground"
+                  variants={childVariants}
+                  whileHover={{ scale: 1.05, color: "#4b5563" }}
+                >
                   <IconWorld />
-                  Languages
                   <ul className="text-sm text-muted-foreground space-y-1">
                     {personalInfo.languages.map((lang, idx) => (
                       <li key={idx}>
