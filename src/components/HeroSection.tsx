@@ -2,6 +2,7 @@ import { PersonalInfo } from "@/lib/types";
 import {
   IconMapPin,
   IconMail,
+  IconWorld,
   IconBrandGithub,
   IconBrandMastodon,
 } from "@tabler/icons-react";
@@ -71,6 +72,15 @@ export default function HeroSection({ personalInfo }: Props) {
               >
                 <IconMapPin />
                 📍 {personalInfo.location}
+              </motion.div>
+
+              <motion.div
+                className="flex items-center text-sm text-muted-foreground"
+                variants={childVariants}
+                whileHover={{ scale: 1.05, color: "#4b5563" }}
+              >
+                <IconWorld />
+                🗣️ {personalInfo.language}
               </motion.div>
 
               <motion.a

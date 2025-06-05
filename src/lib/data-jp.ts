@@ -3,6 +3,7 @@ import type { PersonalInfo, Education, Skills, Projects } from "./types";
 export const personalInfo: PersonalInfo = {
   name: 'スティーブン "thx" キム',
   location: "韓国・大田広域市",
+  language: "韓国語、日本語、英語",
   email: "stevenkim0325@gmail.com",
   github: "https://github.com/thanksstevenkim",
   mastodon: "https://mustard.blog/@thanksstevenkim",

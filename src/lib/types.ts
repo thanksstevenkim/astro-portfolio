@@ -1,6 +1,7 @@
 export type PersonalInfo = {
   name: string;
   location: string;
+  language: string;
   email: string;
   github: string;
   mastodon: string;
