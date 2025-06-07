@@ -56,4 +56,20 @@ export const projects: Projects = [
       "- GitHub Actions による自動デプロイパイプラインの構築を予定",
     ],
   },
+  {
+    title: "Thanks-wiki",
+    github: "https://github.com/thanksstevenkim/thanks-wiki",
+    description: [
+      "- Astro + TypeScript を用いて軽量な静的技術ウィキを構築",
+      "- thanksstevenkim.dev ドメイン配下にて、韓国語・英語・日本語対応のルーティング（/docs/[lang]/[slug]）を実装",
+      "- Markdownベースの読み取り専用ウィキとして高速・軽量構成",
+      "- getStaticPaths と Astro Content Collections による多言語ルーティング対応",
+      "- astro.config.mjs と tsconfig.json を用いたエイリアスと型安全設定",
+      "- カスタムレイアウト（DocLayout.astro）構築中。サイドバーやSEO、言語切替機能も今後追加予定",
+      "- Tailwind CSS によるデザイン調整やテーマ試験を実施",
+      "- 技術的課題を解決：astro:content 認識エラー、slugパラメータの不整合、パスエイリアスの衝突 など",
+      "- 目的：分散型Web、ActivityPub、オープンソース技術の概念を個人向けにアーカイブ",
+      "- GitHub上でバージョン管理し、将来的なOSS貢献も視野に入れた構成",
+    ],
+  },
 ];

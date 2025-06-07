@@ -56,4 +56,20 @@ export const projects: Projects = [
       "- Planning to implement GitHub Actions for CI/CD deployment",
     ],
   },
+  {
+    title: "Thanks-wiki",
+    github: "https://github.com/thanksstevenkim/thanks-wiki",
+    description: [
+      "- Built a lightweight static tech wiki using Astro + TypeScript",
+      "- Deployed under the thanksstevenkim.dev domain with multilingual routes (/docs/[lang]/[slug]) for Korean, English, and Japanese",
+      "- Structured as a read-only markdown-based wiki optimized for performance",
+      "- Implemented multilingual routing with getStaticPaths and Astro Content Collections",
+      "- Configured astro.config.mjs and tsconfig.json for aliasing and type safety",
+      "- Custom layout in progress (DocLayout.astro) with plans for sidebar, SEO, and language switching",
+      "- Tailwind CSS enabled for design customization and theme testing",
+      "- Resolved technical issues: astro:content import errors, slug parameter mismatches, alias path conflicts, and more",
+      "- Purpose: to archive decentralized web, ActivityPub, and open-source concepts for personal reference",
+      "- Set up GitHub repo with version-controlled content for potential open-source contributions",
+    ],
+  },
 ];

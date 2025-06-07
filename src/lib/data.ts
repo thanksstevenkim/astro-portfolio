@@ -55,4 +55,20 @@ export const projects: Projects = [
       "- GitHub Actions 기반의 자동 배포 파이프라인 구축 예정",
     ],
   },
+  {
+    title: "Thanks-wiki",
+    github: "https://github.com/thanksstevenkim/thanks-wiki",
+    description: [
+      "- Astro + TypeScript 기반의 정적 기술 위키 사이트 직접 구축",
+      "- thanksstevenkim.dev 도메인 내 /docs/[lang]/[slug] 구조로 다국어 기술 문서 제공 (한국어, 영어, 일본어)",
+      "- Markdown 콘텐츠 기반의 초경량 읽기 전용 위키 구조 구현",
+      "- Astro Content Collections 설정 및 getStaticPaths 기반 다국어 라우팅 처리",
+      "- astro.config.mjs, tsconfig.json을 통한 alias 및 타입 안정성 구성",
+      "- DocLayout.astro 커스텀 레이아웃 및 향후 사이드바, SEO 설정 예정",
+      "- Tailwind CSS 사용 가능하도록 설정하며, 커스텀 스타일 적용 테스트 중",
+      "- 오류 해결 경험: astro:content 모듈 인식 문제, slug 경로 오류, 모듈 별칭 충돌 등 해결",
+      "- 프로젝트 목적: 탈중앙 웹, ActivityPub, 오픈소스 기술 개념 정리를 위한 개인 아카이브",
+      "- GitHub 레포 관리 및 문서 버전 관리를 통한 오픈소스 기여 기반 마련",
+    ],
+  },
 ];
