@@ -24,21 +24,21 @@ export const education: Education = [
   },
 ];
 export const skills: Skills = {
-  programmingLanguages: ["JavaScript", "Python", "Java"],
-  frontendDevelopment: ["Tailwind CSS", "HTML", "CSS"],
+  programmingLanguages: ["JavaScript", "Python", "Java", "TypeScript"],
+  frontendDevelopment: ["Tailwind CSS", "HTML", "CSS", "Astro", "Remix"],
   backendDevelopment: ["Nodejs"],
-  databaseAndStorage: ["PostgreSQL"],
-  cloudAndDevOps: ["AWS", "AWS S3", "OVHCloud", "Vultr"],
+  databaseAndStorage: ["PostgreSQL", "Prisma ORM"],
+  cloudAndDevOps: ["AWS", "AWS S3", "OVHCloud", "Vultr", "Fly.io", "Vercel"],
   toolsAndServices: [
     "Git",
     "GitHub",
-    "Vercel",
     "Linux (Ubuntu)",
     "Nginx",
     "Docker (기초)",
     "Notion",
     "ChatGPT",
     "VSCode",
+    "Mermaid",
   ],
 };
 
@@ -69,6 +69,18 @@ export const projects: Projects = [
       "- 오류 해결 경험: astro:content 모듈 인식 문제, slug 경로 오류, 모듈 별칭 충돌 등 해결",
       "- 프로젝트 목적: 탈중앙 웹, ActivityPub, 오픈소스 기술 개념 정리를 위한 개인 아카이브",
       "- GitHub 레포 관리 및 문서 버전 관리를 통한 오픈소스 기여 기반 마련",
+    ],
+  },
+  {
+    title: "Jumin-Cheongwon",
+    github: "https://github.com/thanksstevenkim/jumin-cheongwon",
+    description: [
+      "- Remix 기반으로 청원 작성, 제출 API, 인증 구조 등 정책 제안 흐름을 구현",
+      "- 지역 기반 정책 참여를 위한 선거구 인증 로직 설계 및 공감 기준 알고리즘 적용",
+      "- 청원 → 공감 → 설문 → 정책화로 이어지는 Civic Tech 구조 기획 및 개발",
+      "- PostgreSQL + Prisma ORM을 활용한 청원 DB 구조 및 마이그레이션 정의",
+      "- Fly.io 및 Vercel 배포 테스트 진행 중, 서버 렌더링과 폼 처리 최적화 경험",
+      "- 정책 흐름도(Mermaid) 및 주민 역할 분기 설계, README 및 기술 문서화 포함",
     ],
   },
 ];

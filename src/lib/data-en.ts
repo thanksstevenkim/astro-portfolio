@@ -25,21 +25,21 @@ export const education: Education = [
   },
 ];
 export const skills: Skills = {
-  programmingLanguages: ["JavaScript", "Python", "Java"],
-  frontendDevelopment: ["Tailwind CSS", "HTML", "CSS"],
+  programmingLanguages: ["JavaScript", "Python", "Java", "TypeScript"],
+  frontendDevelopment: ["Tailwind CSS", "HTML", "CSS", "Astro", "Remix"],
   backendDevelopment: ["Nodejs"],
-  databaseAndStorage: ["PostgreSQL"],
-  cloudAndDevOps: ["AWS", "AWS S3", "OVHCloud", "Vultr"],
+  databaseAndStorage: ["PostgreSQL", "Prisma ORM"],
+  cloudAndDevOps: ["AWS", "AWS S3", "OVHCloud", "Vultr", "Fly.io", "Vercel"],
   toolsAndServices: [
     "Git",
     "GitHub",
-    "Vercel",
     "Linux (Ubuntu)",
     "Nginx",
     "Docker (Beginner)",
     "Notion",
     "ChatGPT",
     "VSCode",
+    "Mermaid",
   ],
 };
 
@@ -70,6 +70,18 @@ export const projects: Projects = [
       "- Resolved technical issues: astro:content import errors, slug parameter mismatches, alias path conflicts, and more",
       "- Purpose: to archive decentralized web, ActivityPub, and open-source concepts for personal reference",
       "- Set up GitHub repo with version-controlled content for potential open-source contributions",
+    ],
+  },
+  {
+    title: "Jumin-Cheongwon",
+    github: "https://github.com/thanksstevenkim/jumin-cheongwon",
+    description: [
+      "- Built a policy petition platform using Remix, including petition submission forms and API routes",
+  "- Designed a district-based user authentication system and dynamic support thresholds based on local population",
+  "- Implemented a civic tech workflow: Petition → Support → Survey → Policy → Feedback",
+  "- Structured database schema using PostgreSQL with Prisma ORM and prepared migrations",
+  "- Optimized form handling and server-side rendering, tested deployments on Fly.io and Vercel",
+  "- Created technical documentation including user flow diagrams (Mermaid) and platform structure overview",
     ],
   },
 ];

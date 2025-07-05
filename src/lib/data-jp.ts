@@ -25,21 +25,21 @@ export const education: Education = [
 ];
 
 export const skills: Skills = {
-  programmingLanguages: ["JavaScript", "Python", "Java"],
-  frontendDevelopment: ["Tailwind CSS", "HTML", "CSS"],
-  backendDevelopment: ["Node.js"],
-  databaseAndStorage: ["PostgreSQL"],
-  cloudAndDevOps: ["AWS", "AWS S3", "OVHCloud", "Vultr"],
+  programmingLanguages: ["JavaScript", "Python", "Java", "TypeScript"],
+  frontendDevelopment: ["Tailwind CSS", "HTML", "CSS", "Astro", "Remix"],
+  backendDevelopment: ["Nodejs"],
+  databaseAndStorage: ["PostgreSQL", "Prisma ORM"],
+  cloudAndDevOps: ["AWS", "AWS S3", "OVHCloud", "Vultr", "Fly.io", "Vercel"],
   toolsAndServices: [
     "Git",
     "GitHub",
-    "Vercel",
     "Linux (Ubuntu)",
     "Nginx",
     "Docker（基礎）",
     "Notion",
     "ChatGPT",
     "VSCode",
+    "Mermaid",
   ],
 };
 
@@ -70,6 +70,18 @@ export const projects: Projects = [
       "- 技術的課題を解決：astro:content 認識エラー、slugパラメータの不整合、パスエイリアスの衝突 など",
       "- 目的：分散型Web、ActivityPub、オープンソース技術の概念を個人向けにアーカイブ",
       "- GitHub上でバージョン管理し、将来的なOSS貢献も視野に入れた構成",
+    ],
+  },
+  {
+    title: "Jumin-Cheongwon",
+    github: "https://github.com/thanksstevenkim/jumin-cheongwon",
+    description: [
+      "- Remixを用いて、請願投稿フォームとAPI処理を含む政策提案プラットフォームを構築",
+  "- 住民の選挙区に基づく認証システムと、人口に応じた共感基準アルゴリズムを設計",
+  "- 「請願 → 共感 → アンケート → 政策化 → フィードバック」までのCivic Techワークフローを実装",
+  "- PostgreSQLとPrisma ORMによるデータベース設計およびマイグレーションの準備",
+  "- Fly.ioやVercelでのデプロイを通じて、フォーム処理とSSRの最適化を実施",
+  "- MermaidによるフローチャートとREADMEの技術ドキュメントを作成",
     ],
   },
 ];
