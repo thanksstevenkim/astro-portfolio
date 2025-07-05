@@ -16,11 +16,11 @@ export const personalInfo: PersonalInfo = {
 
 export const education: Education = [
   {
-    institution: "ハンバッ大学",
+    institution: "国立ハンバッ大学",
     location: "韓国・大田広域市",
     degree: "情報通信工学科",
     period: "2017年3月 ～ 2026年2月",
-    achievements: ["2026年2月、ハンバッ大学 情報通信工学科 学士号取得予定"],
+    achievements: ["2026年2月、国立ハンバッ大学 情報通信工学科 学士号取得予定"],
   },
 ];
 
